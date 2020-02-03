@@ -1,0 +1,83 @@
+# Configuration file for CYTLasso.
+
+prefix: "&8[&6CYTLasso&8] &r"
+failed-title: "&cRecipe Failed"
+failed-subtitle: "&fCheck your ingredients and try again."
+exploit-detected-title: "&cExploit Detected"
+exploit-detected-subtitle: "&fKeep your lasso in your hand."
+item:
+  display-name: "&6&lGolden Lasso"
+  lore:
+    - "&7Right click a mob to turn it into an egg!"
+    - "&7One-time use! Choose wisely!"
+    - " "
+    - "&eCost: $10"
+egg-name: "&6&lA Special %entity%"
+recipe:
+  matrix:
+    form: "AAA;ABA;AAA"
+    definitions:
+      A: "GOLD_INGOT"
+      B: "LEAD"
+  1:
+    name: "%default%"
+    lore:
+      - "%default%"
+    enchants:
+      - "%default%"
+  2:
+    name: "%default%"
+    lore:
+      - "%default%"
+    enchants:
+      - "%default%"
+  3:
+    name: "%default%"
+    lore:
+      - "%default%"
+    enchants:
+      - "%default%"
+  4:
+    name: "%default%"
+    lore:
+      - "%default%"
+    enchants:
+      - "%default%"
+  5:
+    name: "%default%"
+    lore:
+      - "%default%"
+    enchants:
+      - "%default%"
+  6:
+    name: "%default%"
+    lore:
+      - "%default%"
+    enchants:
+      - "%default%"
+  7:
+    name: "%default%"
+    lore:
+      - "%default%"
+    enchants:
+      - "%default%"
+  8:
+    name: "%default%"
+    lore:
+      - "%default%"
+    enchants:
+      - "%default%"
+  9:
+    name: "%default%"
+    lore:
+      - "%default%"
+    enchants:
+      - "%default%"
+player-offline: "&eYou cannot give a lasso to an offline player."
+successfully-given: "&eSuccessfully given &7%target% &ea golden lasso."
+no-perms: "&eYou do not have permission to do that."
+cost: 10.50
+insufficient-balance: "&eYou do not have enough money to use the lasso."
+main-color: "&6"
+key-color: "&e"
+value-color: "&7"
