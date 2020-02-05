@@ -4,6 +4,7 @@ import com.demeng7215.cytlasso.CYTLasso;
 import com.demeng7215.demlib.api.messages.MessageUtils;
 import org.bukkit.Bukkit;
 import org.bukkit.DyeColor;
+import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.EntityType;
@@ -51,8 +52,11 @@ public class GoldenLassoMobSpawnEvent implements Listener {
 		if (hasOwner(hand)) owner = MessageUtils.stripColors(meta.getLore().get(1)).split(": ")[1];
 		if (hasLeash(hand)) leash = MessageUtils.stripColors(meta.getLore().get(2)).split(": ")[1];
 
-		Entity i = e.getPlayer().getWorld().spawnEntity(e.getClickedBlock().getLocation(),
-					EntityType.valueOf(hand.getType().name().replace("_SPAWN_EGG", "")));
+		Location loc = new Location(e.getClickedBlock().getWorld(),
+				e.getClickedBlock().getX(), e.getClickedBlock().getY() + 1, e.getClickedBlock().getZ());
+
+		Entity i = e.getPlayer().getWorld().spawnEntity(loc, EntityType.valueOf(
+				hand.getType().name().replace("_SPAWN_EGG", "")));
 
 		if (name != null) i.setCustomName(name);
 		else i.setCustomNameVisible(false);
