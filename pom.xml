@@ -4,19 +4,19 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.demeng7215</groupId>
+    <groupId>dev.demeng</groupId>
     <artifactId>cytlasso</artifactId>
     <version>1.0.0</version>
     <packaging>jar</packaging>
 
     <name>CYTLasso</name>
 
-    <description>A golden lasso plugin.</description>
+    <description>Custom golden lasso plugin for CraftYourTown.</description>
     <properties>
         <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-    <url>https://demeng7215.com</url>
+    <url>https://demeng.dev/</url>
 
     <build>
         <defaultGoal>clean package</defaultGoal>
@@ -45,8 +45,8 @@
                             <minimizeJar>true</minimizeJar>
                             <relocations>
                                 <relocation>
-                                    <pattern>com.demeng7215.demlib</pattern>
-                                    <shadedPattern>com.demeng7215.cytlasso.shaded.lib</shadedPattern>
+                                    <pattern>dev.demeng.demlib</pattern>
+                                    <shadedPattern>dev.demeng.cytlasso.shaded.demlib</shadedPattern>
                                 </relocation>
                             </relocations>
                         </configuration>
@@ -85,9 +85,9 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>com.demeng7215</groupId>
+            <groupId>dev.demeng</groupId>
             <artifactId>demlib</artifactId>
-            <version>1.0.0</version>
+            <version>4.1.0</version>
             <scope>compile</scope>
         </dependency>
         <dependency>

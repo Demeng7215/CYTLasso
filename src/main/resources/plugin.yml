@@ -1,8 +1,13 @@
 name: CYTLasso
 version: ${project.version}
-main: com.demeng7215.cytlasso.CYTLasso
+main: dev.demeng.cytlasso.CYTLasso
 depend: [Vault]
-author: Demeng7215
+author: Demeng
 description: A golden lasso plugin.
-website: https://demeng7215.com
+website: https://demeng.dev/
 api-version: 1.13
+
+commands:
+  cytlasso:
+    description: Main command of CYTLassso.
+    aliases: [goldenlasso]
